@@ -58,6 +58,8 @@ The specification for Certificates is published at https://docs.genobank.io/cert
 
 If you want to contribute here are the main commands.
 
+Main branch is used for development.
+
 ### Prerequisites
 
 1. Supported operating systems are macOS, Linux and Windows
@@ -102,3 +104,33 @@ If you want to build for browser run:
 Compiled CLIs will become available in `/compiled` folder.
 
 Note: Only works with node version 10 to 14.
+
+## Release process
+
+All steps below must be done or detailed issues created on the same day.
+
+1. Create a [release tag and GitHub release](https://github.com/Genobank/genobankio-js/releases)
+2. Update all supported front-end clients
+   1. Somos
+   2. https://github.com/Genobank/portunus.io
+   3. https://github.com/Genobank/laboratory-asombroso
+   4. https://github.com/Genobank/mds-certificados
+3. Update [documentation for GitHub certificates](https://docs.genobank.io/certificates/)
+   1. Update version number there and anything else that needs updating
+4. Update all other certificates implementations (since this JS repo is the reference implementation) and make releases with the same version number
+   1. https://github.com/Genobank/genobankio-dot-net
+   2. https://github.com/Genobank/genobankioj
+   3. https://github.com/Genobank/genobankio-php
+
+We are using GitHub to host our releases. This is done in a way that a GitHub branch that corresponds with release version is created where the version code is hosted.
+
+### Instructions
+
+When main branch is ready for a new release:
+
+1. Create a new branch from main branch with desired version name.
+2. On this branch generate webpack with `npm run webpack` and commit it.
+3. On this branch build CLI with: `npm run pkg`.
+4. On Github create a new Release and attach files locates in `/compiled` folder (this was generated in step 3) as well as `./js/genobank.min.js` file.
+5. Use `https://cdn.jsdelivr.net/gh/Genobank/genobankio-js@1.0.0/js/genobank.min.js` link for serving files. Replace `1.0.0` in the link with the new version.
+6. If you need SRI link you can use https://www.srihash.org/ to generate it.

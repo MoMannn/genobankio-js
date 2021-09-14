@@ -4,10 +4,10 @@
     "1": {
       "internationalName": "COVID-19-PCR",
       "descriptionLocalizations": {
-        "en": "COVID-19 Polymerase Chain Reaction test",
-        "es": "Prueba de reacción en cadena de la polimerasa COVID-19",
-        "pt": "Teste de reação em cadeia de polimerase COVID-19",
-        "zh": "COVID-19 聚合酶链反应试验"
+        "en": "SARS-CoV-2 Polymerase Chain Reaction test",
+        "es": "Prueba de reacción en cadena de la polimerasa SARS-CoV-2",
+        "pt": "Teste de reação em cadeia de polimerase SARS-CoV-2",
+        "zh": "SARS-CoV-2 聚合酶链反应试验"
       },
       "resultsTaxonomy": {
         "N": {
@@ -31,12 +31,13 @@
       }
     },
     "2": {
+      "status": "active",
       "internationalName": "COVID-19-ANTIGEN",
       "descriptionLocalizations": {
-        "en": "COVID-19 antigen test",
-        "es": "Prueba de antígeno COVID-19",
-        "pt": "Teste de antígeno COVID-19",
-        "zh": "COVID-19 抗原测试"
+        "en": "SARS-CoV-2 antigen test",
+        "es": "Prueba de antígeno SARS-CoV-2",
+        "pt": "Teste de antígeno SARS-CoV-2",
+        "zh": "SARS-CoV-2 抗原测试"
       },
       "resultsTaxonomy": {
         "N": {
@@ -62,10 +63,10 @@
     "3": {
       "internationalName": "COVID-19-LAMP",
       "descriptionLocalizations": {
-        "en": "COVID-19 loupe Mediated isothermal amplification test",
-        "es": "Prueba de amplificación isotérmica mediada por lupa COVID-19",
-        "pt": "Teste de amplificação isotérmica mediada por lupa COVID-19",
-        "zh": "COVID-19 放大镜介导的等温扩增试验"
+        "en": "SARS-CoV-2 loupe Mediated isothermal amplification test",
+        "es": "Prueba de amplificación isotérmica mediada por lupa SARS-CoV-2",
+        "pt": "Teste de amplificação isotérmica mediada por lupa SARS-CoV-2",
+        "zh": "SARS-CoV-2 放大镜介导的等温扩增试验"
       },
       "resultsTaxonomy": {
         "N": {
@@ -91,10 +92,10 @@
     "4": {
       "internationalName": "COVID-19-VACCINE",
       "descriptionLocalizations": {
-        "en": "COVID-19 vaccine was administered",
-        "es": "Se administró la vacuna COVID-19",
-        "pt": "Vacina COVID-19 foi administrada",
-        "zh": "接种了COVID-19疫苗"
+        "en": "SARS-CoV-2 vaccine was administered",
+        "es": "Se administró la vacuna SARS-CoV-2",
+        "pt": "Vacina SARS-CoV-2 foi administrada",
+        "zh": "接种了SARS-CoV-2疫苗"
       },
       "resultsTaxonomy": {
         "C": {
@@ -104,6 +105,35 @@
             "es": "Todas las dosis requeridas se administraron por completo",
             "pt": "Todas as doses necessárias foram administradas completamente",
             "zh": "所有所需的剂量都完全施用"
+          }
+        }
+      }
+    },
+    "5": {
+      "internationalName": "SARS-CoV-2-IgG",
+      "descriptionLocalizations": {
+        "en": "SARS-CoV2 IgG antibody test was administered",
+        "es": "Se administró la prueba de anticuerpos IgG SARS-CoV2",
+        "pt": "O teste de anticorpos SARS-CoV2 IgG foi administrado",
+        "zh": "进行了 SARS-CoV2 IgG 抗体测试"
+      },
+      "resultsTaxonomy": {
+        "N": {
+          "internationalName": "NEGATIVE",
+          "descriptionLocalizations": {
+            "en": "IgG SARS-CoV-2 not detected",
+            "es": "IgG SARS-CoV-2 no se detectó",
+            "pt": "IgG SARS-CoV-2 não foi detectado",
+            "zh": "未检测到 SARS-CoV-2"
+          }
+        },
+        "P": {
+          "internationalName": "POSITIVE",
+          "descriptionLocalizations": {
+            "en": "IgG SARS-CoV-2 was detected >15 UA/mL",
+            "es": "IgG SARS-CoV-2 se detectó >15 UA/mL",
+            "pt": "IgG SARS-CoV-2 foi detectado >15 UA/mL",
+            "zh": "检测到SARS-CoV-2 >15 UA/mL"
           }
         }
       }
